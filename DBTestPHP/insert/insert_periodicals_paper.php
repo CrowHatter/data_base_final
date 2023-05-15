@@ -38,6 +38,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     mysqli_close($link);
-    //header("Refresh: 2; url=http://140.134.53.58/~D1051594/DBTestPHP/insert.php");
+    header("Refresh: 2; url=http://140.134.53.58/~D1051594/DBTestPHP/insert.php");
 }
 ?>

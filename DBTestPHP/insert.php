@@ -96,6 +96,14 @@
                     </form>
                 </div>
                 <div id="lecture_and_book">
+                    <h2>校內外演講</h2>
+                    <form action="insert/insert_academic_qualifications.php" method="post">
+                        school: <input type="text" name="school" required>
+                        department: <input type="text" name="department" required>
+                        degree: <input type="text" name="degree" required>
+                        <input type="submit">
+                    </form>
+                    <h2>教材與作品</h2>
                     <form action="insert/insert_academic_qualifications.php" method="post">
                         school: <input type="text" name="school" required>
                         department: <input type="text" name="department" required>
@@ -104,6 +112,14 @@
                     </form>
                 </div>
                 <div id="teach_award">
+                    <h2>校內獎勵與指導生獲獎</h2>
+                    <form action="insert/insert_academic_qualifications.php" method="post">
+                        school: <input type="text" name="school" required>
+                        department: <input type="text" name="department" required>
+                        degree: <input type="text" name="degree" required>
+                        <input type="submit">
+                    </form>
+                    <h2>校外獎勵與指導生獲獎</h2>
                     <form action="insert/insert_academic_qualifications.php" method="post">
                         school: <input type="text" name="school" required>
                         department: <input type="text" name="department" required>
@@ -111,7 +127,15 @@
                         <input type="submit">
                     </form>
                 </div>
-                <div id="personal_basic_data">
+                <div id="participate_program">
+                    <h2>產學合作計畫</h2>
+                    <form action="insert/insert_academic_qualifications.php" method="post">
+                        school: <input type="text" name="school" required>
+                        department: <input type="text" name="department" required>
+                        degree: <input type="text" name="degree" required>
+                        <input type="submit">
+                    </form>
+                    <h2>科技部計畫</h2>
                     <form action="insert/insert_academic_qualifications.php" method="post">
                         school: <input type="text" name="school" required>
                         department: <input type="text" name="department" required>
@@ -120,6 +144,14 @@
                     </form>
                 </div>
                 <div id="experience">
+                    <h2>校內經歷</h2>
+                    <form action="insert/insert_academic_qualifications.php" method="post">
+                        school: <input type="text" name="school" required>
+                        department: <input type="text" name="department" required>
+                        degree: <input type="text" name="degree" required>
+                        <input type="submit">
+                    </form>
+                    <h2>校外經歷</h2>
                     <form action="insert/insert_academic_qualifications.php" method="post">
                         school: <input type="text" name="school" required>
                         department: <input type="text" name="department" required>

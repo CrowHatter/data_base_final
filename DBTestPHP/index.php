@@ -42,14 +42,13 @@
                     echo "<td>" . $row["page"] . "</td>";
                     echo "<td>" . $row["date"] . "</td>";
                     echo "<td>" . $row["level"] . "</td>";
-                    echo "<td>" . "</td>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
                 ?>
             </table>
         </div>
-        <div id="meeting_paper" style="display: none;line-height: 3;">
+        <div id="meeting_paper" style="display: none;">
             <table>
                 <?php
                 $link = mysqli_connect(
@@ -93,7 +92,6 @@
                     echo "<td>" . $row["unit"] . "</td>";
                     echo "<td>" . $row["page"] . "</td>";
                     echo "<td>" . $row["date"] . "</td>";
-                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -127,7 +125,6 @@
                     echo "<td>" . $row["lecture_name"] . "</td>";
                     echo "<td>" . $row["lecture_unit"] . "</td>";
                     echo "<td>" . $row["lecture_date"] . "</td>";
-                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -151,7 +148,6 @@
                     echo "<td>" . $row["aurthor"] . "</td>";
                     echo "<td>" . $row["publisher"] . "</td>";
                     echo "<td>" . $row["type"] . "</td>";
-                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -187,7 +183,6 @@
                     echo "<td>" . $row["awarding_unit"] . "</td>";
                     echo "<td>" . $row["awarding_date"] . "</td>";
                     echo "<td>" . $row["content"] . "</td>";
-                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -212,7 +207,6 @@
                     echo "<td>" . $row["awarding_unit"] . "</td>";
                     echo "<td>" . $row["awarding_date"] . "</td>";
                     echo "<td>" . $row["content"] . "</td>";
-                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -246,7 +240,6 @@
                     echo "<td>" . $row["project_name"] . "</td>";
                     echo "<td>" . $row["start_end"] . "</td>";
                     echo "<td>" . $row["position"] . "</td>";
-                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -270,7 +263,6 @@
                     echo "<td>" . $row["project_number"] . "</td>";
                     echo "<td>" . $row["start_end"] . "</td>";
                     echo "<td>" . $row["job_position"] . "</td>";
-                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -304,7 +296,6 @@
                     echo "<td>" . $row["unit"] . "</td>";
                     echo "<td>" . $row["job_position"] . "</td>";
                     echo "<td>" . $row["school"] . "</td>";
-                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -327,7 +318,6 @@
                     echo "<td>" . $row["unit"] . "</td>";
                     echo "<td>" . $row["job_position"] . "</td>";
                     echo "<td>" . $row["school"] . "</td>";
-                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
