@@ -1,0 +1,31 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $link = mysqli_connect(
+        'localhost',
+        'D1051594',
+        '#eiH4eufi',
+        'D1051594'
+    );
+
+    $ID = time();
+    $unit = mysqli_real_escape_string($link, $_POST["unit"]);
+    $job_position = mysqli_real_escape_string($link, $_POST["job_position"]);
+
+    echo "$ID";
+    echo "$unit";
+    echo "$job_position";
+    echo "<br><br>";
+
+    $sql = "INSERT INTO campus_experience VALUES ('$ID','$unit', '$job_position', '逢甲大學')";
+
+    try {
+        $result = mysqli_query($link, $sql);
+        echo "新增成功<br>";
+    } catch (Exception $e) {
+        echo $e->getMessage() . "<br>";
+    }
+
+    mysqli_close($link);
+    header("Refresh: 2; url=http://140.134.53.58/~D1051594/DBTestPHP/insert.php");
+}
+?>
