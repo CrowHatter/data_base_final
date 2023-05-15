@@ -42,14 +42,14 @@
                     echo "<td>" . $row["page"] . "</td>";
                     echo "<td>" . $row["date"] . "</td>";
                     echo "<td>" . $row["level"] . "</td>";
-                    echo "<br>";
+                    echo "<td>" . "</td>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
                 ?>
             </table>
         </div>
-        <div id="meeting_paper" style="display: none;">
+        <div id="meeting_paper" style="display: none;line-height: 3;">
             <table>
                 <?php
                 $link = mysqli_connect(
@@ -68,7 +68,6 @@
                     echo "<td>" . $row["meeting_unit"] . "</td>";
                     echo "<td>" . $row["date"] . "</td>";
                     echo "<td>" . $row["page"] . "</td>";
-                    echo "<br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -94,7 +93,7 @@
                     echo "<td>" . $row["unit"] . "</td>";
                     echo "<td>" . $row["page"] . "</td>";
                     echo "<td>" . $row["date"] . "</td>";
-                    echo "<br>";
+                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -128,7 +127,7 @@
                     echo "<td>" . $row["lecture_name"] . "</td>";
                     echo "<td>" . $row["lecture_unit"] . "</td>";
                     echo "<td>" . $row["lecture_date"] . "</td>";
-                    echo "<br>";
+                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -152,7 +151,7 @@
                     echo "<td>" . $row["aurthor"] . "</td>";
                     echo "<td>" . $row["publisher"] . "</td>";
                     echo "<td>" . $row["type"] . "</td>";
-                    echo "<br>";
+                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -188,7 +187,7 @@
                     echo "<td>" . $row["awarding_unit"] . "</td>";
                     echo "<td>" . $row["awarding_date"] . "</td>";
                     echo "<td>" . $row["content"] . "</td>";
-                    echo "<br>";
+                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -213,7 +212,7 @@
                     echo "<td>" . $row["awarding_unit"] . "</td>";
                     echo "<td>" . $row["awarding_date"] . "</td>";
                     echo "<td>" . $row["content"] . "</td>";
-                    echo "<br>";
+                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -247,7 +246,7 @@
                     echo "<td>" . $row["project_name"] . "</td>";
                     echo "<td>" . $row["start_end"] . "</td>";
                     echo "<td>" . $row["position"] . "</td>";
-                    echo "<br>";
+                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -271,7 +270,7 @@
                     echo "<td>" . $row["project_number"] . "</td>";
                     echo "<td>" . $row["start_end"] . "</td>";
                     echo "<td>" . $row["job_position"] . "</td>";
-                    echo "<br>";
+                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -305,7 +304,7 @@
                     echo "<td>" . $row["unit"] . "</td>";
                     echo "<td>" . $row["job_position"] . "</td>";
                     echo "<td>" . $row["school"] . "</td>";
-                    echo "<br>";
+                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
@@ -328,7 +327,7 @@
                     echo "<td>" . $row["unit"] . "</td>";
                     echo "<td>" . $row["job_position"] . "</td>";
                     echo "<td>" . $row["school"] . "</td>";
-                    echo "<br>";
+                    echo "<br><br>";
                     echo "</tr>";
                 }
                 mysqli_close($link);

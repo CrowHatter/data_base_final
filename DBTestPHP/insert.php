@@ -83,6 +83,17 @@
                         &nbsp page: <input type="text" name="page">
                         <input type="submit">
                     </form>
+                    <h2>專書論文</h2>
+                    <form action="insert/insert_book_paper.php" method="post">
+                        &nbsp book_name: <input type="text" name="book_name" required>
+                        &nbsp paper_title: <input type="text" name="paper_title" required>
+                        &nbsp aurthor: <input type="text" name="aurthor">
+                        &nbsp unit: <input type="text" name="unit">
+                        <br>
+                        &nbsp page: <input type="text" name="page">
+                        &nbsp date: <input type="text" name="date">
+                        <input type="submit">
+                    </form>
                 </div>
                 <div id="lecture_and_book">
                     <form action="insert/insert_academic_qualifications.php" method="post">
