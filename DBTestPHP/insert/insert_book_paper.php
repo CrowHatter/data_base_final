@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "$date";
     echo "<br><br>";
 
-    $sql = "INSERT INTO meeting_paper VALUES ('$ID','$book_name','$paper_title','$aurthor','$unit','$page','$date')";
+    $sql = "INSERT INTO book_paper VALUES ('$ID','$book_name','$paper_title','$aurthor','$unit','$page','$date')";
 
     try {
         $result = mysqli_query($link, $sql);

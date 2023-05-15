@@ -212,3 +212,27 @@ select {
     border-radius: 5px;
     font-size: 20px;
 }
+
+.Data-Content {
+    width: 800px;
+    line-height: 40px;
+}
+
+.Data-Title {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.Data-Items {
+    float: left;
+    width: 500px;
+}
+
+.AlignRight {
+    text-align: right;
+}
+
+.InputBlock {
+    width: 600px;
+}
