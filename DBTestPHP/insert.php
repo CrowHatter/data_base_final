@@ -49,9 +49,9 @@
                         <div class="Data-Content">
                             <div class="Data-Title">
                                 <div class="AlignRight">
-                                    <label for="school">school: </label><br />
-                                    <label for="department">department: </label><br />
-                                    <label for="degree">degree: </label><br />
+                                    <label>school: </label><br />
+                                    <label>department: </label><br />
+                                    <label>degree: </label><br />
                                 </div>
                             </div>
                             <div class="Data-Items">
@@ -67,7 +67,7 @@
                         <div class="Data-Content">
                             <div class="Data-Title">
                                 <div class="AlignRight">
-                                    <label for="area">area: </label><br />
+                                    <label>area: </label><br />
                                 </div>
                             </div>
                             <div class="Data-Items">
@@ -83,14 +83,14 @@
                         <div class="Data-Content">
                             <div class="Data-Title">
                                 <div class="AlignRight">
-                                    <label for="paper_title">paper_title: </label><br />
-                                    <label for="aurthor">aurthor: </label><br />
-                                    <label for="periodicals_title">periodicals_title: </label><br />
-                                    <label for="num_of_rolls">num_of_rolls: </label><br />
-                                    <label for="num_of_period">num_of_period: </label><br />
-                                    <label for="page">page: </label><br />
-                                    <label for="date">date: </label><br />
-                                    <label for="level">level: </label><br />
+                                    <label>paper_title: </label><br />
+                                    <label>aurthor: </label><br />
+                                    <label>periodicals_title: </label><br />
+                                    <label>num_of_rolls: </label><br />
+                                    <label>num_of_period: </label><br />
+                                    <label>page: </label><br />
+                                    <label>date: </label><br />
+                                    <label>level: </label><br />
                                 </div>
                             </div>
                             <div class="Data-Items">
@@ -111,12 +111,12 @@
                         <div class="Data-Content">
                             <div class="Data-Title">
                                 <div class="AlignRight">
-                                    <label for="paper_title">paper_title: </label><br />
-                                    <label for="aurthor">aurthor: </label><br />
-                                    <label for="meeting_title">meeting_title: </label><br />
-                                    <label for="meeting_unit">meeting_unit: </label><br />
-                                    <label for="date">date: </label><br />
-                                    <label for="page">page: </label><br />
+                                    <label>paper_title: </label><br />
+                                    <label>aurthor: </label><br />
+                                    <label>meeting_title: </label><br />
+                                    <label>meeting_unit: </label><br />
+                                    <label>date: </label><br />
+                                    <label>page: </label><br />
                                 </div>
                             </div>
                             <div class="Data-Items">
@@ -135,12 +135,12 @@
                         <div class="Data-Content">
                             <div class="Data-Title">
                                 <div class="AlignRight">
-                                    <label for="book_name">book_name: </label><br />
-                                    <label for="paper_title">paper_title: </label><br />
-                                    <label for="aurthor">aurthor: </label><br />
-                                    <label for="unit">unit: </label><br />
-                                    <label for="page">page: </label><br />
-                                    <label for="date">date: </label><br />
+                                    <label>book_name: </label><br />
+                                    <label>paper_title: </label><br />
+                                    <label>aurthor: </label><br />
+                                    <label>unit: </label><br />
+                                    <label>page: </label><br />
+                                    <label>date: </label><br />
                                 </div>
                             </div>
                             <div class="Data-Items">
@@ -161,9 +161,9 @@
                         <div class="Data-Content">
                             <div class="Data-Title">
                                 <div class="AlignRight">
-                                    <label for="lecture_name">lecture_name: </label><br />
-                                    <label for="lecture_unit">lecture_unit: </label><br />
-                                    <label for="lecture_date">lecture_date: </label><br />
+                                    <label>lecture_name: </label><br />
+                                    <label>lecture_unit: </label><br />
+                                    <label>lecture_date: </label><br />
                                 </div>
                             </div>
                             <div class="Data-Items">
@@ -179,10 +179,10 @@
                         <div class="Data-Content">
                             <div class="Data-Title">
                                 <div class="AlignRight">
-                                    <label for="bookname">bookname: </label><br />
-                                    <label for="aurthor">aurthor: </label><br />
-                                    <label for="publisher">publisher: </label><br />
-                                    <label for="type">type: </label><br />
+                                    <label>bookname: </label><br />
+                                    <label>aurthor: </label><br />
+                                    <label>publisher: </label><br />
+                                    <label>type: </label><br />
                                 </div>
                             </div>
                             <div class="Data-Items">
@@ -201,11 +201,11 @@
                         <div class="Data-Content">
                             <div class="Data-Title">
                                 <div class="AlignRight">
-                                    <label for="award_name">award_name: </label><br />
-                                    <label for="launch_year">launch_year: </label><br />
-                                    <label for="awarding_unit">awarding_unit: </label><br />
-                                    <label for="awarding_date">awarding_date: </label><br />
-                                    <label for="content">content: </label><br />
+                                    <label>award_name: </label><br />
+                                    <label>launch_year: </label><br />
+                                    <label>awarding_unit: </label><br />
+                                    <label>awarding_date: </label><br />
+                                    <label>content: </label><br />
                                 </div>
                             </div>
                             <div class="Data-Items">
@@ -223,11 +223,11 @@
                         <div class="Data-Content">
                             <div class="Data-Title">
                                 <div class="AlignRight">
-                                    <label for="award_name">award_name: </label><br />
-                                    <label for="launch_year">launch_year: </label><br />
-                                    <label for="awarding_unit">awarding_unit: </label><br />
-                                    <label for="awarding_date">awarding_date: </label><br />
-                                    <label for="content">content: </label><br />
+                                    <label>award_name: </label><br />
+                                    <label>launch_year: </label><br />
+                                    <label>awarding_unit: </label><br />
+                                    <label>awarding_date: </label><br />
+                                    <label>content: </label><br />
                                 </div>
                             </div>
                             <div class="Data-Items">
@@ -247,9 +247,9 @@
                         <div class="Data-Content">
                             <div class="Data-Title">
                                 <div class="AlignRight">
-                                    <label for="project_name">project_name: </label><br />
-                                    <label for="start_end">start_end: </label><br />
-                                    <label for="position">position: </label><br />
+                                    <label>project_name: </label><br />
+                                    <label>start_end: </label><br />
+                                    <label>position: </label><br />
                                 </div>
                             </div>
                             <div class="Data-Items">
@@ -265,10 +265,10 @@
                         <div class="Data-Content">
                             <div class="Data-Title">
                                 <div class="AlignRight">
-                                    <label for="project_name">project_name: </label><br />
-                                    <label for="project_number">project_number: </label><br />
-                                    <label for="start_end">start_end: </label><br />
-                                    <label for="position">position: </label><br />
+                                    <label>project_name: </label><br />
+                                    <label>project_number: </label><br />
+                                    <label>start_end: </label><br />
+                                    <label>position: </label><br />
                                 </div>
                             </div>
                             <div class="Data-Items">
@@ -287,8 +287,8 @@
                         <div class="Data-Content">
                             <div class="Data-Title">
                                 <div class="AlignRight">
-                                    <label for="unit">unit: </label><br />
-                                    <label for="job_position">job_position: </label><br />
+                                    <label>unit: </label><br />
+                                    <label>job_position: </label><br />
                                 </div>
                             </div>
                             <div class="Data-Items">
@@ -303,15 +303,15 @@
                         <div class="Data-Content">
                             <div class="Data-Title">
                                 <div class="AlignRight">
-                                    <label for="school">school: </label><br />
-                                    <label for="department">department: </label><br />
-                                    <label for="degree">degree: </label><br />
+                                    <label>unit: </label><br />
+                                    <label>job_position: </label><br />
+                                    <label>school: </label><br />
                                 </div>
                             </div>
                             <div class="Data-Items">
-                                <input type="text" name="school" class="InputBlock" required><br />
-                                <input type="text" name="department" class="InputBlock" required><br />
-                                <input type="text" name="degree" class="InputBlock"><br />
+                                <input type="text" name="unit" class="InputBlock" required><br />
+                                <input type="text" name="job_position" class="InputBlock" required><br />
+                                <input type="text" name="school" class="InputBlock"><br />
                             </div>
                             <br /><br /><br /><input type="submit">
                         </div>
@@ -320,26 +320,302 @@
             </div>
             <div class="WorkBlock" id="WorkBlock2" style="display: none">
                 <h1>刪除</h1>
-                <form action="delete/delete_test.php" method="post">
-                    <?php
-                    $link = mysqli_connect(
-                        'localhost',
-                        'D1051594',
-                        '#eiH4eufi',
-                        'D1051594'
-                    );
-                    $sql = "SELECT * FROM TEST";
-                    $result = mysqli_query($link, $sql);
-                    while ($row = mysqli_fetch_array($result)) {
-                        echo "<label>";
-                        echo '<input type="checkbox" name="checkbox[]" id="checkbox_0" value=' . $row["id"] . ' />' . $row["id"] . $row["name"] . "</label>";
-                        echo "<br><br>";
-                        echo "</label>";
-                    }
-                    mysqli_close($link);
-                    ?>
-                    <input type="submit" name="button" id="button" value="送出" />
+                <form action="">
+                    <select name="Experience" onchange="DeleteChange(this.value)">
+                        <option value="">none</option>
+                        <option value="personal_basic_data_d">個人基本資料</option>
+                        <option value="paper_d">論文</option>
+                        <option value="lecture_and_book_d">演講紀錄與專書</option>
+                        <option value="teach_award_d">指導獲獎</option>
+                        <option value="participate_program_d">參與計畫</option>
+                        <option value="experience_d">經歷</option>
+                    </select>
                 </form>
+                <div id="personal_basic_data_d" style="display: none">
+                    <h2>學歷</h2>
+                    <form action="delete/delete_academic_qualifications.php" method="post">
+                        <?php
+                        $link = mysqli_connect(
+                            'localhost',
+                            'D1051594',
+                            '#eiH4eufi',
+                            'D1051594'
+                        );
+                        $sql = "SELECT * FROM academic_qualifications";
+                        $result = mysqli_query($link, $sql);
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<label>";
+                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["school"] . $row["department"] . $row["degree"] . "</label>";
+                            echo "<br><br>";
+                            echo "</label>";
+                        }
+                        mysqli_close($link);
+                        ?>
+                        <input type="submit" name="button" id="button" value="delete" />
+                    </form>
+                    <h2>專長</h2>
+                    <form action="delete/delete_expertise.php" method="post">
+                        <?php
+                        $link = mysqli_connect(
+                            'localhost',
+                            'D1051594',
+                            '#eiH4eufi',
+                            'D1051594'
+                        );
+                        $sql = "SELECT * FROM expertise";
+                        $result = mysqli_query($link, $sql);
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<label>";
+                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["area"] . "</label>";
+                            echo "<br><br>";
+                            echo "</label>";
+                        }
+                        mysqli_close($link);
+                        ?>
+                        <input type="submit" name="button" id="button" value="delete" />
+                    </form>
+                </div>
+                <div id="paper_d" style="display: none">
+                    <h2>期刊論文</h2>
+                    <form action="delete/delete_periodicals_paper.php" method="post">
+                        <?php
+                        $link = mysqli_connect(
+                            'localhost',
+                            'D1051594',
+                            '#eiH4eufi',
+                            'D1051594'
+                        );
+                        $sql = "SELECT * FROM periodicals_paper";
+                        $result = mysqli_query($link, $sql);
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<label>";
+                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["paper_title"] . $row["aurthor"] . $row["periodicals_title"] . $row["num_of_rolls"] . $row["num_of_period"] . $row["page"] . $row["date"] . $row["level"] . "</label>";
+                            echo "<br><br>";
+                            echo "</label>";
+                        }
+                        mysqli_close($link);
+                        ?>
+                        <input type="submit" name="button" id="button" value="delete" />
+                    </form>
+                    <h2>會議論文</h2>
+                    <form action="delete/delete_meeting_paper.php" method="post">
+                        <?php
+                        $link = mysqli_connect(
+                            'localhost',
+                            'D1051594',
+                            '#eiH4eufi',
+                            'D1051594'
+                        );
+                        $sql = "SELECT * FROM meeting_paper";
+                        $result = mysqli_query($link, $sql);
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<label>";
+                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["paper_title"] . $row["aurthor"] . $row["meeting_title"] . $row["meeting_unit"] . $row["date"] . $row["page"] . "</label>";
+                            echo "<br><br>";
+                            echo "</label>";
+                        }
+                        mysqli_close($link);
+                        ?>
+                        <input type="submit" name="button" id="button" value="delete" />
+                    </form>
+                    <h2>專書論文</h2>
+                    <form action="delete/delete_book_paper.php" method="post">
+                        <?php
+                        $link = mysqli_connect(
+                            'localhost',
+                            'D1051594',
+                            '#eiH4eufi',
+                            'D1051594'
+                        );
+                        $sql = "SELECT * FROM book_paper";
+                        $result = mysqli_query($link, $sql);
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<label>";
+                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["book_name"] . $row["paper_title"] . $row["aurthor"] . $row["unit"] . $row["page"] . $row["date"] . "</label>";
+                            echo "<br><br>";
+                            echo "</label>";
+                        }
+                        mysqli_close($link);
+                        ?>
+                        <input type="submit" name="button" id="button" value="delete" />
+                    </form>
+                </div>
+                <div id="lecture_and_book_d" style="display: none">
+                    <h2>校內外演講</h2>
+                    <form action="delete/delete_campus_lecture.php" method="post">
+                        <?php
+                        $link = mysqli_connect(
+                            'localhost',
+                            'D1051594',
+                            '#eiH4eufi',
+                            'D1051594'
+                        );
+                        $sql = "SELECT * FROM campus_lecture";
+                        $result = mysqli_query($link, $sql);
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<label>";
+                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["lecture_name"] . $row["lecture_unit"] . $row["lecture_date"] . "</label>";
+                            echo "<br><br>";
+                            echo "</label>";
+                        }
+                        mysqli_close($link);
+                        ?>
+                        <input type="submit" name="button" id="button" value="delete" />
+                    </form>
+                    <h2>教材與作品</h2>
+                    <form action="delete/delete_textbooks_and_works.php" method="post">
+                        <?php
+                        $link = mysqli_connect(
+                            'localhost',
+                            'D1051594',
+                            '#eiH4eufi',
+                            'D1051594'
+                        );
+                        $sql = "SELECT * FROM textbooks_and_works";
+                        $result = mysqli_query($link, $sql);
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<label>";
+                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["bookname"] . $row["aurthor"] . $row["publisher"] . $row["type"] . "</label>";
+                            echo "<br><br>";
+                            echo "</label>";
+                        }
+                        mysqli_close($link);
+                        ?>
+                        <input type="submit" name="button" id="button" value="delete" />
+                    </form>
+                </div>
+                <div id="teach_award_d" style="display: none">
+                    <h2>校內獎勵與指導生獲獎</h2>
+                    <form action="delete/delete_campus_awards_and_student_guidance_awards.php" method="post">
+                        <?php
+                        $link = mysqli_connect(
+                            'localhost',
+                            'D1051594',
+                            '#eiH4eufi',
+                            'D1051594'
+                        );
+                        $sql = "SELECT * FROM campus_awards_and_student_guidance_awards";
+                        $result = mysqli_query($link, $sql);
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<label>";
+                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["award_name"] . $row["launch_year"] . $row["awarding_unit"] . $row["awarding_date"] . $row["content"] . "</label>";
+                            echo "<br><br>";
+                            echo "</label>";
+                        }
+                        mysqli_close($link);
+                        ?>
+                        <input type="submit" name="button" id="button" value="delete" />
+                    </form>
+                    <h2>校外獎勵與指導生獲獎</h2>
+                    <form action="delete/delete_out_campus_awards_and_student_guidance_awards.php" method="post">
+                        <?php
+                        $link = mysqli_connect(
+                            'localhost',
+                            'D1051594',
+                            '#eiH4eufi',
+                            'D1051594'
+                        );
+                        $sql = "SELECT * FROM out_campus_awards_and_student_guidance_awards";
+                        $result = mysqli_query($link, $sql);
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<label>";
+                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["award_name"] . $row["launch_year"] . $row["awarding_unit"] . $row["awarding_date"] . $row["content"] . "</label>";
+                            echo "<br><br>";
+                            echo "</label>";
+                        }
+                        mysqli_close($link);
+                        ?>
+                        <input type="submit" name="button" id="button" value="delete" />
+                    </form>
+                </div>
+                <div id="participate_program_d" style="display: none">
+                    <h2>產學合作計畫</h2>
+                    <form action="delete/delete_Industry_University_Cooperation_Program.php" method="post">
+                        <?php
+                        $link = mysqli_connect(
+                            'localhost',
+                            'D1051594',
+                            '#eiH4eufi',
+                            'D1051594'
+                        );
+                        $sql = "SELECT * FROM Industry_University_Cooperation_Program";
+                        $result = mysqli_query($link, $sql);
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<label>";
+                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["project_name"] . $row["start_end"] . $row["position"] . "</label>";
+                            echo "<br><br>";
+                            echo "</label>";
+                        }
+                        mysqli_close($link);
+                        ?>
+                        <input type="submit" name="button" id="button" value="delete" />
+                    </form>
+                    <h2>科技部計畫</h2>
+                    <form action="delete/delete_ministry_of_science_and_technology_program.php" method="post">
+                        <?php
+                        $link = mysqli_connect(
+                            'localhost',
+                            'D1051594',
+                            '#eiH4eufi',
+                            'D1051594'
+                        );
+                        $sql = "SELECT * FROM ministry_of_science_and_technology_program";
+                        $result = mysqli_query($link, $sql);
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<label>";
+                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["project_name"] . $row["project_number"] . $row["start_end"] . $row["position"] . "</label>";
+                            echo "<br><br>";
+                            echo "</label>";
+                        }
+                        mysqli_close($link);
+                        ?>
+                        <input type="submit" name="button" id="button" value="delete" />
+                    </form>
+                </div>
+                <div id="experience_d" style="display: none">
+                    <h2>校內經歷</h2>
+                    <form action="delete/delete_campus_experience.php" method="post">
+                        <?php
+                        $link = mysqli_connect(
+                            'localhost',
+                            'D1051594',
+                            '#eiH4eufi',
+                            'D1051594'
+                        );
+                        $sql = "SELECT * FROM campus_experience";
+                        $result = mysqli_query($link, $sql);
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<label>";
+                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["unit"] . $row["job_position"] . "</label>";
+                            echo "<br><br>";
+                            echo "</label>";
+                        }
+                        mysqli_close($link);
+                        ?>
+                        <input type="submit" name="button" id="button" value="delete" />
+                    </form>
+                    <h2>校外經歷</h2>
+                    <form action="delete/delete_out_campus_experience.php" method="post">
+                        <?php
+                        $link = mysqli_connect(
+                            'localhost',
+                            'D1051594',
+                            '#eiH4eufi',
+                            'D1051594'
+                        );
+                        $sql = "SELECT * FROM out_campus_experience";
+                        $result = mysqli_query($link, $sql);
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<label>";
+                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["unit"] . $row["job_position"] . $row["school"] . "</label>";
+                            echo "<br><br>";
+                            echo "</label>";
+                        }
+                        mysqli_close($link);
+                        ?>
+                        <input type="submit" name="button" id="button" value="delete" />
+                    </form>
+                </div>
             </div>
             <div class="WorkBlock" id="WorkBlock3" style="display: none">
                 <h1>修改</h1>
