@@ -150,3 +150,65 @@ function DeleteChange(str) {
     }
 }
 
+function UpdateChange(str) {
+    switch (str) {
+        case "personal_basic_data_u":
+            document.getElementById("personal_basic_data_u").style.display = "initial";
+            document.getElementById("paper_u").style.display = "none";
+            document.getElementById("lecture_and_book_u").style.display = "none";
+            document.getElementById("teach_award_u").style.display = "none";
+            document.getElementById("participate_program_u").style.display = "none";
+            document.getElementById("experience_u").style.display = "none";
+            break;
+        case "paper_u":
+            document.getElementById("personal_basic_data_u").style.display = "none";
+            document.getElementById("paper_u").style.display = "initial";
+            document.getElementById("lecture_and_book_u").style.display = "none";
+            document.getElementById("teach_award_u").style.display = "none";
+            document.getElementById("participate_program_u").style.display = "none";
+            document.getElementById("experience_u").style.display = "none";
+            break;
+        case "lecture_and_book_u":
+            document.getElementById("personal_basic_data_u").style.display = "none";
+            document.getElementById("paper_u").style.display = "none";
+            document.getElementById("lecture_and_book_u").style.display = "initial";
+            document.getElementById("teach_award_u").style.display = "none";
+            document.getElementById("participate_program_u").style.display = "none";
+            document.getElementById("experience_u").style.display = "none";
+            break;
+        case "teach_award_u":
+            document.getElementById("personal_basic_data_u").style.display = "none";
+            document.getElementById("paper_u").style.display = "none";
+            document.getElementById("lecture_and_book_u").style.display = "none";
+            document.getElementById("teach_award_u").style.display = "initial";
+            document.getElementById("participate_program_u").style.display = "none";
+            document.getElementById("experience_u").style.display = "none";
+            break;
+        case "participate_program_u":
+            document.getElementById("personal_basic_data_u").style.display = "none";
+            document.getElementById("paper_u").style.display = "none";
+            document.getElementById("lecture_and_book_u").style.display = "none";
+            document.getElementById("teach_award_u").style.display = "none";
+            document.getElementById("participate_program_u").style.display = "initial";
+            document.getElementById("experience_u").style.display = "none";
+            break;
+        case "experience_u":
+            document.getElementById("personal_basic_data_u").style.display = "none";
+            document.getElementById("paper_u").style.display = "none";
+            document.getElementById("lecture_and_book_u").style.display = "none";
+            document.getElementById("teach_award_u").style.display = "none";
+            document.getElementById("participate_program_u").style.display = "none";
+            document.getElementById("experience_u").style.display = "initial";
+            break;
+        default:
+            document.getElementById("personal_basic_data_u").style.display = "none";
+            document.getElementById("paper_u").style.display = "none";
+            document.getElementById("lecture_and_book_u").style.display = "none";
+            document.getElementById("teach_award_u").style.display = "none";
+            document.getElementById("participate_program_u").style.display = "none";
+            document.getElementById("experience_u").style.display = "none";
+            break;
+    }
+}
+
+
