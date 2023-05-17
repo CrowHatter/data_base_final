@@ -619,11 +619,65 @@
             </div>
             <div class="WorkBlock" id="WorkBlock3" style="display: none">
                 <h1>修改</h1>
-                <form action="insert_sql.php" method="post">
-                    id: <input type="text" name="id" required>
-                    name: <input type="text" name="name" required>
-                    <input type="submit">
+                <form action="">
+                    <select name="Experience" onchange="UpdateChange(this.value)">
+                        <option value="">none</option>
+                        <option value="personal_basic_data_u">個人基本資料</option>
+                        <option value="paper_u">論文</option>
+                        <option value="lecture_and_book_u">演講紀錄與專書</option>
+                        <option value="teach_award_u">指導獲獎</option>
+                        <option value="participate_program_u">參與計畫</option>
+                        <option value="experience_u">經歷</option>
+                    </select>
                 </form>
+                <div id="personal_basic_data_u" style="display: none">
+                    <h2>學歷</h2>
+                    <?php
+                    $link = mysqli_connect(
+                        'localhost',
+                        'D1051594',
+                        '#eiH4eufi',
+                        'D1051594'
+                    );
+                    $sql = "SELECT * FROM academic_qualifications";
+                    $result = mysqli_query($link, $sql);
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo '<form action="update/update_academic_qualifications.php" method="post">';
+                        echo "<label>";
+                        echo '<input type="hidden" name=ID value=' . $row["ID"] . ' />';
+                        echo '<input type="text" name=school value=' . $row["school"] . ' />';
+                        echo '<input type="text" name=department value=' . $row["department"] . ' />';
+                        echo '<input type="text" name=degree value=' . $row["degree"] . ' />';
+                        echo '<input type="submit"/>';
+                        echo "</label>";
+                        echo "<br><br>";
+                        echo '</form>';
+                    }
+                    mysqli_close($link);
+                    ?>
+                    <h2>專長</h2>
+                </div>
+                <div id="paper_u" style="display: none">
+                    <h2>期刊論文</h2>
+                    <h2>會議論文</h2>
+                    <h2>專書論文</h2>
+                </div>
+                <div id="lecture_and_book_u" style="display: none">
+                    <h2>校內外演講</h2>
+                    <h2>教材與作品</h2>
+                </div>
+                <div id="teach_award_u" style="display: none">
+                    <h2>校內獎勵與指導生獲獎</h2>
+                    <h2>校外獎勵與指導生獲獎</h2>
+                </div>
+                <div id="participate_program_u" style="display: none">
+                    <h2>產學合作計畫</h2>
+                    <h2>科技部計畫</h2>
+                </div>
+                <div id="experience_u" style="display: none">
+                    <h2>校內經歷</h2>
+                    <h2>校外經歷</h2>
+                </div>
             </div>
         </div>
     </div>
