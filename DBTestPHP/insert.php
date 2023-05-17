@@ -676,6 +676,28 @@
                 </div>
                 <div id="experience_u" style="display: none">
                     <h2>校內經歷</h2>
+                    <?php
+                    $link = mysqli_connect(
+                        'localhost',
+                        'D1051594',
+                        '#eiH4eufi',
+                        'D1051594'
+                    );
+                    $sql = "SELECT * FROM campus_experience";
+                    $result = mysqli_query($link, $sql);
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo '<form action="update/update_campus_experience.php" method="post">';
+                        echo "<label>";
+                        echo '<input type="hidden" name=ID value=' . $row["ID"] . ' />';
+                        echo '<input type="text" name=unit value=' . $row["unit"] . ' />';
+                        echo '<input type="text" name=job_position value=' . $row["job_position"] . ' />';
+                        echo '<input type="submit"/>';
+                        echo "</label>";
+                        echo "<br><br>";
+                        echo '</form>';
+                    }
+                    mysqli_close($link);
+                    ?>
                     <h2>校外經歷</h2>
                 </div>
             </div>

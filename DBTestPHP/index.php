@@ -180,7 +180,6 @@
                     echo "<tr>";
                     echo "<td>" . $row["launch_year"] . "</td>";
                     echo "<td>" . $row["award_name"] . "</td>";
-                    echo "<td>" . $row["awarding_unit"] . "</td>";
                     echo "<td>" . $row["awarding_date"] . "</td>";
                     echo "<td>" . $row["content"] . "</td>";
                     echo "</tr>";
@@ -295,7 +294,6 @@
                     echo "<tr>";
                     echo "<td>" . $row["unit"] . "</td>";
                     echo "<td>" . $row["job_position"] . "</td>";
-                    echo "<td>" . $row["school"] . "</td>";
                     echo "</tr>";
                 }
                 mysqli_close($link);
