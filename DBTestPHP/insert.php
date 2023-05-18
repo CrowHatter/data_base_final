@@ -656,23 +656,268 @@
                     mysqli_close($link);
                     ?>
                     <h2>專長</h2>
+                    <?php
+                    $link = mysqli_connect(
+                        'localhost',
+                        'D1051594',
+                        '#eiH4eufi',
+                        'D1051594'
+                    );
+                    $sql = "SELECT * FROM expertise";
+                    $result = mysqli_query($link, $sql);
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo '<form action="update/update_expertise.php" method="post">';
+                        echo "<label>";
+                        echo '<input type="hidden" name=ID value=' . $row["ID"] . ' />';
+                        echo '<input type="text" name=area value=' . $row["area"] . ' />';
+                        echo '<input type="submit"/>';
+                        echo "</label>";
+                        echo "<br><br>";
+                        echo '</form>';
+                    }
+                    mysqli_close($link);
+                    ?>
                 </div>
                 <div id="paper_u" style="display: none">
                     <h2>期刊論文</h2>
+                    <?php
+                    $link = mysqli_connect(
+                        'localhost',
+                        'D1051594',
+                        '#eiH4eufi',
+                        'D1051594'
+                    );
+                    $sql = "SELECT * FROM periodicals_paper";
+                    $result = mysqli_query($link, $sql);
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo '<form action="update/update_periodicals_paper.php" method="post">';
+                        echo "<label>";
+                        echo '<input type="hidden" name=ID value=' . $row["ID"] . ' />';
+                        echo '<input type="text" name=paper_title value=' . $row["paper_title"] . ' />';
+                        echo '<input type="text" name=aurthor value=' . $row["aurthor"] . ' />';
+                        echo '<input type="text" name=periodicals_title value=' . $row["periodicals_title"] . ' />';
+                        echo '<input type="text" name=num_of_rolls value=' . $row["num_of_rolls"] . ' />';
+                        echo '<input type="text" name=num_of_period value=' . $row["num_of_period"] . ' />';
+                        echo '<input type="text" name=page value=' . $row["page"] . ' />';
+                        echo '<input type="text" name=date value=' . $row["date"] . ' />';
+                        echo '<input type="text" name=level value=' . $row["level"] . ' />';
+                        echo '<input type="submit"/>';
+                        echo "</label>";
+                        echo "<br><br>";
+                        echo '</form>';
+                    }
+                    mysqli_close($link);
+                    ?>
                     <h2>會議論文</h2>
+                    <?php
+                    $link = mysqli_connect(
+                        'localhost',
+                        'D1051594',
+                        '#eiH4eufi',
+                        'D1051594'
+                    );
+                    $sql = "SELECT * FROM meeting_paper";
+                    $result = mysqli_query($link, $sql);
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo '<form action="update/update_meeting_paper.php" method="post">';
+                        echo "<label>";
+                        echo '<input type="hidden" name=ID value=' . $row["ID"] . ' />';
+                        echo '<input type="text" name=paper_title value=' . $row["paper_title"] . ' />';
+                        echo '<input type="text" name=aurthor value=' . $row["aurthor"] . ' />';
+                        echo '<input type="text" name=meeting_title value=' . $row["meeting_title"] . ' />';
+                        echo '<input type="text" name=meeting_unit value=' . $row["meeting_unit"] . ' />';
+                        echo '<input type="text" name=date value=' . $row["date"] . ' />';
+                        echo '<input type="text" name=page value=' . $row["page"] . ' />';
+                        echo '<input type="submit"/>';
+                        echo "</label>";
+                        echo "<br><br>";
+                        echo '</form>';
+                    }
+                    mysqli_close($link);
+                    ?>
                     <h2>專書論文</h2>
+                    <?php
+                    $link = mysqli_connect(
+                        'localhost',
+                        'D1051594',
+                        '#eiH4eufi',
+                        'D1051594'
+                    );
+                    $sql = "SELECT * FROM book_paper";
+                    $result = mysqli_query($link, $sql);
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo '<form action="update/update_book_paper.php" method="post">';
+                        echo "<label>";
+                        echo '<input type="hidden" name=ID value=' . $row["ID"] . ' />';
+                        echo '<input type="text" name=book_name value=' . $row["book_name"] . ' />';
+                        echo '<input type="text" name=paper_title value=' . $row["paper_title"] . ' />';
+                        echo '<input type="text" name=aurthor value=' . $row["aurthor"] . ' />';
+                        echo '<input type="text" name=unit value=' . $row["unit"] . ' />';
+                        echo '<input type="text" name=page value=' . $row["page"] . ' />';
+                        echo '<input type="text" name=date value=' . $row["date"] . ' />';
+                        echo '<input type="submit"/>';
+                        echo "</label>";
+                        echo "<br><br>";
+                        echo '</form>';
+                    }
+                    mysqli_close($link);
+                    ?>
                 </div>
                 <div id="lecture_and_book_u" style="display: none">
                     <h2>校內外演講</h2>
+                    <?php
+                    $link = mysqli_connect(
+                        'localhost',
+                        'D1051594',
+                        '#eiH4eufi',
+                        'D1051594'
+                    );
+                    $sql = "SELECT * FROM campus_lecture";
+                    $result = mysqli_query($link, $sql);
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo '<form action="update/update_campus_lecture.php" method="post">';
+                        echo "<label>";
+                        echo '<input type="hidden" name=ID value=' . $row["ID"] . ' />';
+                        echo '<input type="text" name=lecture_name value=' . $row["lecture_name"] . ' />';
+                        echo '<input type="text" name=lecture_unit value=' . $row["lecture_unit"] . ' />';
+                        echo '<input type="text" name=lecture_date value=' . $row["lecture_date"] . ' />';
+                        echo '<input type="submit"/>';
+                        echo "</label>";
+                        echo "<br><br>";
+                        echo '</form>';
+                    }
+                    mysqli_close($link);
+                    ?>
                     <h2>教材與作品</h2>
+                    <?php
+                    $link = mysqli_connect(
+                        'localhost',
+                        'D1051594',
+                        '#eiH4eufi',
+                        'D1051594'
+                    );
+                    $sql = "SELECT * FROM textbooks_and_works";
+                    $result = mysqli_query($link, $sql);
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo '<form action="update/update_textbooks_and_works.php" method="post">';
+                        echo "<label>";
+                        echo '<input type="hidden" name=ID value=' . $row["ID"] . ' />';
+                        echo '<input type="text" name=book_name value=' . $row["book_name"] . ' />';
+                        echo '<input type="text" name=aurthor value=' . $row["aurthor"] . ' />';
+                        echo '<input type="text" name=publisher value=' . $row["publisher"] . ' />';
+                        echo '<input type="text" name=type value=' . $row["type"] . ' />';
+                        echo '<input type="submit"/>';
+                        echo "</label>";
+                        echo "<br><br>";
+                        echo '</form>';
+                    }
+                    mysqli_close($link);
+                    ?>
                 </div>
                 <div id="teach_award_u" style="display: none">
                     <h2>校內獎勵與指導生獲獎</h2>
+                    <?php
+                    $link = mysqli_connect(
+                        'localhost',
+                        'D1051594',
+                        '#eiH4eufi',
+                        'D1051594'
+                    );
+                    $sql = "SELECT * FROM campus_awards_and_student_guidance_awards";
+                    $result = mysqli_query($link, $sql);
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo '<form action="update/update_campus_awards_and_student_guidance_awards.php" method="post">';
+                        echo "<label>";
+                        echo '<input type="hidden" name=ID value=' . $row["ID"] . ' />';
+                        echo '<input type="text" name=award_name value=' . $row["award_name"] . ' />';
+                        echo '<input type="text" name=launch_year value=' . $row["launch_year"] . ' />';
+                        echo '<input type="text" name=awarding_unit value=' . $row["awarding_unit"] . ' />';
+                        echo '<input type="text" name=awarding_date value=' . $row["awarding_date"] . ' />';
+                        echo '<input type="text" name=content value=' . $row["content"] . ' />';
+                        echo '<input type="submit"/>';
+                        echo "</label>";
+                        echo "<br><br>";
+                        echo '</form>';
+                    }
+                    mysqli_close($link);
+                    ?>
                     <h2>校外獎勵與指導生獲獎</h2>
+                    <?php
+                    $link = mysqli_connect(
+                        'localhost',
+                        'D1051594',
+                        '#eiH4eufi',
+                        'D1051594'
+                    );
+                    $sql = "SELECT * FROM out_campus_awards_and_student_guidance_awards";
+                    $result = mysqli_query($link, $sql);
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo '<form action="update/update_out_campus_awards_and_student_guidance_awards.php" method="post">';
+                        echo "<label>";
+                        echo '<input type="hidden" name=ID value=' . $row["ID"] . ' />';
+                        echo '<input type="text" name=award_name value=' . $row["award_name"] . ' />';
+                        echo '<input type="text" name=launch_year value=' . $row["launch_year"] . ' />';
+                        echo '<input type="text" name=awarding_unit value=' . $row["awarding_unit"] . ' />';
+                        echo '<input type="text" name=awarding_date value=' . $row["awarding_date"] . ' />';
+                        echo '<input type="text" name=content value=' . $row["content"] . ' />';
+                        echo '<input type="submit"/>';
+                        echo "</label>";
+                        echo "<br><br>";
+                        echo '</form>';
+                    }
+                    mysqli_close($link);
+                    ?>
                 </div>
                 <div id="participate_program_u" style="display: none">
                     <h2>產學合作計畫</h2>
+                    <?php
+                    $link = mysqli_connect(
+                        'localhost',
+                        'D1051594',
+                        '#eiH4eufi',
+                        'D1051594'
+                    );
+                    $sql = "SELECT * FROM Industry_University_Cooperation_Program";
+                    $result = mysqli_query($link, $sql);
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo '<form action="update/update_Industry_University_Cooperation_Program.php" method="post">';
+                        echo "<label>";
+                        echo '<input type="hidden" name=ID value=' . $row["ID"] . ' />';
+                        echo '<input type="text" name=project_name value=' . $row["project_name"] . ' />';
+                        echo '<input type="text" name=start_end value=' . $row["start_end"] . ' />';
+                        echo '<input type="text" name=position value=' . $row["position"] . ' />';
+                        echo '<input type="submit"/>';
+                        echo "</label>";
+                        echo "<br><br>";
+                        echo '</form>';
+                    }
+                    mysqli_close($link);
+                    ?>
                     <h2>科技部計畫</h2>
+                    <?php
+                    $link = mysqli_connect(
+                        'localhost',
+                        'D1051594',
+                        '#eiH4eufi',
+                        'D1051594'
+                    );
+                    $sql = "SELECT * FROM ministry_of_science_and_technology_program";
+                    $result = mysqli_query($link, $sql);
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo '<form action="update/update_ministry_of_science_and_technology_program.php" method="post">';
+                        echo "<label>";
+                        echo '<input type="hidden" name=ID value=' . $row["ID"] . ' />';
+                        echo '<input type="text" name=project_name value=' . $row["project_name"] . ' />';
+                        echo '<input type="text" name=project_number value=' . $row["project_number"] . ' />';
+                        echo '<input type="text" name=start_end value=' . $row["start_end"] . ' />';
+                        echo '<input type="text" name=position value=' . $row["position"] . ' />';
+                        echo '<input type="submit"/>';
+                        echo "</label>";
+                        echo "<br><br>";
+                        echo '</form>';
+                    }
+                    mysqli_close($link);
+                    ?>
                 </div>
                 <div id="experience_u" style="display: none">
                     <h2>校內經歷</h2>

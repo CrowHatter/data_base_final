@@ -8,12 +8,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     );
 
     $ID = mysqli_real_escape_string($link, $_POST["ID"]);
-    $unit = mysqli_real_escape_string($link, $_POST["unit"]);
-    $job_position = mysqli_real_escape_string($link, $_POST["job_position"]);
+    $area = mysqli_real_escape_string($link, $_POST["area"]);
 
-    echo $ID . $unit . $job_position . "<br><br>";
+    echo $ID . $area . "<br><br>";
 
-    $sql = "UPDATE campus_experience SET unit='$unit', job_position='$job_position' WHERE ID='$ID'";
+    $sql = "UPDATE expertise SET area='$area' WHERE ID='$ID'";
 
     try {
         $result = mysqli_query($link, $sql);

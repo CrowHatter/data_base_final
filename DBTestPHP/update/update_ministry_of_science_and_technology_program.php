@@ -8,13 +8,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     );
 
     $ID = mysqli_real_escape_string($link, $_POST["ID"]);
-    $unit = mysqli_real_escape_string($link, $_POST["unit"]);
+    $project_name = mysqli_real_escape_string($link, $_POST["project_name"]);
+    $project_number = mysqli_real_escape_string($link, $_POST["project_number"]);
+    $start_end = mysqli_real_escape_string($link, $_POST["start_end"]);
     $job_position = mysqli_real_escape_string($link, $_POST["job_position"]);
 
-    echo $ID . $unit . $job_position . "<br><br>";
+    echo $ID . $project_name . $project_number . $start_end . $job_position . "<br><br>";
 
-    $sql = "UPDATE campus_experience SET unit='$unit', job_position='$job_position' WHERE ID='$ID'";
+    $sql = "UPDATE ministry_of_science_and_technology_program SET project_name='$project_name', project_number='$project_number', start_end='$start_end', job_position='$job_position' WHERE ID='$ID'";
 
+    try {
     try {
         $result = mysqli_query($link, $sql);
         echo "修改成功<br>";

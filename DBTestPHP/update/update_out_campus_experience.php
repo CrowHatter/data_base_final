@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     echo $ID . $unit . $job_position . $school . "<br><br>";
 
-    $sql = "UPDATE out_campus_experience SET ID= '$ID', unit='$unit', job_position='$job_position', school='$school' WHERE ID = '$ID'";
+    $sql = "UPDATE out_campus_experience SET unit='$unit', job_position='$job_position', school='$school' WHERE ID='$ID'";
 
     try {
         $result = mysqli_query($link, $sql);

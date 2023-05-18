@@ -8,12 +8,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     );
 
     $ID = mysqli_real_escape_string($link, $_POST["ID"]);
-    $unit = mysqli_real_escape_string($link, $_POST["unit"]);
-    $job_position = mysqli_real_escape_string($link, $_POST["job_position"]);
+    $bookname = mysqli_real_escape_string($link, $_POST["bookname"]);
+    $aurthor = mysqli_real_escape_string($link, $_POST["aurthor"]);
+    $publisher = mysqli_real_escape_string($link, $_POST["publisher"]);
+    $type = mysqli_real_escape_string($link, $_POST["type"]);
 
-    echo $ID . $unit . $job_position . "<br><br>";
+    echo $ID . $bookname . $aurthor . $publisher . $type . "<br><br>";
 
-    $sql = "UPDATE campus_experience SET unit='$unit', job_position='$job_position' WHERE ID='$ID'";
+    $sql = "UPDATE textbooks_and_works SET bookname='$bookname', aurthor='$aurthor', publisher='$publisher', type='$type' WHERE ID='$ID'";
 
     try {
         $result = mysqli_query($link, $sql);
