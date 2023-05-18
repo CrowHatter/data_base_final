@@ -802,7 +802,7 @@
                         echo '<form action="update/update_textbooks_and_works.php" method="post">';
                         echo "<label>";
                         echo '<input type="hidden" name=ID value=' . $row["ID"] . ' />';
-                        echo '<input type="text" name=book_name value=' . $row["book_name"] . ' />';
+                        echo '<input type="text" name=bookname value=' . $row["bookname"] . ' />';
                         echo '<input type="text" name=aurthor value=' . $row["aurthor"] . ' />';
                         echo '<input type="text" name=publisher value=' . $row["publisher"] . ' />';
                         echo '<input type="text" name=type value=' . $row["type"] . ' />';
