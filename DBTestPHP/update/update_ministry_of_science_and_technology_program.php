@@ -18,7 +18,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "UPDATE ministry_of_science_and_technology_program SET project_name='$project_name', project_number='$project_number', start_end='$start_end', job_position='$job_position' WHERE ID='$ID'";
 
     try {
-    try {
         $result = mysqli_query($link, $sql);
         echo "修改成功<br>";
     } catch (Exception $e) {

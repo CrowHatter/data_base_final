@@ -236,3 +236,13 @@ select {
 .InputBlock {
     width: 600px;
 }
+
+input[type=text] {
+    width: 500px;
+    height: 25px;
+    box-sizing: border-box;
+    border: 1.5px solid #555;
+    margin: 3px 0;
+    border-radius: 2px;
+    padding-left: 10px;
+}
