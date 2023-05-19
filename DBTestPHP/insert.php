@@ -345,7 +345,7 @@
                         $result = mysqli_query($link, $sql);
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<label>";
-                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["school"] . $row["department"] . $row["degree"] . "</label>";
+                            echo '<input type="checkbox" name="checkbox[]" value="' . $row["ID"] . '" />' . $row["school"] . $row["department"] . $row["degree"] . "</label>";
                             echo "<br><br>";
                             echo "</label>";
                         }
@@ -366,7 +366,7 @@
                         $result = mysqli_query($link, $sql);
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<label>";
-                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["area"] . "</label>";
+                            echo '<input type="checkbox" name="checkbox[]" value="' . $row["ID"] . '" />' . $row["area"] . "</label>";
                             echo "<br><br>";
                             echo "</label>";
                         }
@@ -389,7 +389,7 @@
                         $result = mysqli_query($link, $sql);
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<label>";
-                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["paper_title"] . $row["aurthor"] . $row["periodicals_title"] . $row["num_of_rolls"] . $row["num_of_period"] . $row["page"] . $row["date"] . $row["level"] . "</label>";
+                            echo '<input type="checkbox" name="checkbox[]" value="' . $row["ID"] . '" />' . $row["paper_title"] . $row["aurthor"] . $row["periodicals_title"] . $row["num_of_rolls"] . $row["num_of_period"] . $row["page"] . $row["date"] . $row["level"] . "</label>";
                             echo "<br><br>";
                             echo "</label>";
                         }
@@ -410,7 +410,7 @@
                         $result = mysqli_query($link, $sql);
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<label>";
-                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["paper_title"] . $row["aurthor"] . $row["meeting_title"] . $row["meeting_unit"] . $row["date"] . $row["page"] . "</label>";
+                            echo '<input type="checkbox" name="checkbox[]" value="' . $row["ID"] . '" />' . $row["paper_title"] . $row["aurthor"] . $row["meeting_title"] . $row["meeting_unit"] . $row["date"] . $row["page"] . "</label>";
                             echo "<br><br>";
                             echo "</label>";
                         }
@@ -431,7 +431,7 @@
                         $result = mysqli_query($link, $sql);
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<label>";
-                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["book_name"] . $row["paper_title"] . $row["aurthor"] . $row["unit"] . $row["page"] . $row["date"] . "</label>";
+                            echo '<input type="checkbox" name="checkbox[]" value="' . $row["ID"] . '" />' . $row["book_name"] . $row["paper_title"] . $row["aurthor"] . $row["unit"] . $row["page"] . $row["date"] . "</label>";
                             echo "<br><br>";
                             echo "</label>";
                         }
@@ -454,7 +454,7 @@
                         $result = mysqli_query($link, $sql);
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<label>";
-                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["lecture_name"] . $row["lecture_unit"] . $row["lecture_date"] . "</label>";
+                            echo '<input type="checkbox" name="checkbox[]" value="' . $row["ID"] . '" />' . $row["lecture_name"] . $row["lecture_unit"] . $row["lecture_date"] . "</label>";
                             echo "<br><br>";
                             echo "</label>";
                         }
@@ -475,7 +475,7 @@
                         $result = mysqli_query($link, $sql);
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<label>";
-                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["bookname"] . $row["aurthor"] . $row["publisher"] . $row["type"] . "</label>";
+                            echo '<input type="checkbox" name="checkbox[]" value="' . $row["ID"] . '" />' . $row["bookname"] . $row["aurthor"] . $row["publisher"] . $row["type"] . "</label>";
                             echo "<br><br>";
                             echo "</label>";
                         }
@@ -498,7 +498,7 @@
                         $result = mysqli_query($link, $sql);
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<label>";
-                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["award_name"] . $row["launch_year"] . $row["awarding_unit"] . $row["awarding_date"] . $row["content"] . "</label>";
+                            echo '<input type="checkbox" name="checkbox[]" value="' . $row["ID"] . '" />' . $row["award_name"] . $row["launch_year"] . $row["awarding_unit"] . $row["awarding_date"] . $row["content"] . "</label>";
                             echo "<br><br>";
                             echo "</label>";
                         }
@@ -519,7 +519,7 @@
                         $result = mysqli_query($link, $sql);
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<label>";
-                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["award_name"] . $row["launch_year"] . $row["awarding_unit"] . $row["awarding_date"] . $row["content"] . "</label>";
+                            echo '<input type="checkbox" name="checkbox[]" value="' . $row["ID"] . '" />' . $row["award_name"] . $row["launch_year"] . $row["awarding_unit"] . $row["awarding_date"] . $row["content"] . "</label>";
                             echo "<br><br>";
                             echo "</label>";
                         }
@@ -542,7 +542,7 @@
                         $result = mysqli_query($link, $sql);
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<label>";
-                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["project_name"] . $row["start_end"] . $row["position"] . "</label>";
+                            echo '<input type="checkbox" name="checkbox[]" value="' . $row["ID"] . '" />' . $row["project_name"] . $row["start_end"] . $row["position"] . "</label>";
                             echo "<br><br>";
                             echo "</label>";
                         }
@@ -563,7 +563,7 @@
                         $result = mysqli_query($link, $sql);
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<label>";
-                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["project_name"] . $row["project_number"] . $row["start_end"] . $row["position"] . "</label>";
+                            echo '<input type="checkbox" name="checkbox[]" value="' . $row["ID"] . '" />' . $row["project_name"] . $row["project_number"] . $row["start_end"] . $row["position"] . "</label>";
                             echo "<br><br>";
                             echo "</label>";
                         }
@@ -586,7 +586,7 @@
                         $result = mysqli_query($link, $sql);
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<label>";
-                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["unit"] . $row["job_position"] . "</label>";
+                            echo '<input type="checkbox" name="checkbox[]" value="' . $row["ID"] . '" />' . $row["unit"] . $row["job_position"] . "</label>";
                             echo "<br><br>";
                             echo "</label>";
                         }
@@ -607,7 +607,7 @@
                         $result = mysqli_query($link, $sql);
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<label>";
-                            echo '<input type="checkbox" name="checkbox[]" value=' . $row["ID"] . ' />' . $row["unit"] . $row["job_position"] . $row["school"] . "</label>";
+                            echo '<input type="checkbox" name="checkbox[]" value="' . $row["ID"] . '" />' . $row["unit"] . $row["job_position"] . $row["school"] . "</label>";
                             echo "<br><br>";
                             echo "</label>";
                         }
