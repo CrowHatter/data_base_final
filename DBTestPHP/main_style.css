@@ -210,3 +210,12 @@ select {
     border-radius: 5px;
     font-size: 20px;
 }
+
+input[type=text] {
+    height: 25px;
+    box-sizing: border-box;
+    border: 1.5px solid #555;
+    margin: 3px 1px;
+    border-radius: 2px;
+    padding-left: 10px;
+}
