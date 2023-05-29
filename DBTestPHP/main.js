@@ -158,3 +158,16 @@ function ShowExperience(str) {
             break;
     }
 }
+
+function SearchPeriodicalsPaper(str) {
+    if (str == "") {
+        document.getElementById("sarch_periodicals_paper_hint").innerHTML = "";
+        return;
+    }
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+        document.getElementById("sarch_periodicals_paper_hint").innerHTML = this.responseText;
+    }
+    xhttp.open("GET", "test.php?q=" + str);
+    xhttp.send();
+}

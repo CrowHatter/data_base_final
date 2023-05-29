@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>資料庫作業</title>
     <link rel="stylesheet" href="main_style.css">
-</head>
+
+</head>x
 
 <body>
     <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <div id="Filter"></div>
     <dialog id="Dialog1">
         <button id="CloseButton" onclick="closeDialog1() ">x</button>
@@ -22,7 +24,36 @@
             </select>
         </form>
         <div id="periodicals_paper" style="display: none;">
-            <table>
+            <div class="container" style="max-width: 50%">
+                <input type="text" class="form-control" id="live_search" autocomplete="off" placeholder="search...">
+            </div>
+            <div id="search_periodicals_paper_result"></div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $("#live_search").keyup(function () {
+                        var input = $(this).val();
+                        //alert(input);
+
+                        if (input !== "") {
+                            $("#search_periodicals_paper_result").css("display", "initial");
+                            $("#show_all_periodicals_paper").css("display", "none");
+                            $.ajax({
+                                url: "search/search_periodicals_paper.php",
+                                method: "POST",
+                                data: { input: input },
+
+                                success: function (data) {
+                                    $("#search_periodicals_paper_result").html(data);
+                                }
+                            })
+                        } else {
+                            $("#search_periodicals_paper_result").css("display", "none");
+                            $("#show_all_periodicals_paper").css("display", "initial");
+                        }
+                    })
+                })
+            </script>
+            <table id="show_all_periodicals_paper">
                 <?php
                 $link = mysqli_connect(
                     'localhost',
