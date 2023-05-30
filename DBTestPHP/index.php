@@ -209,7 +209,39 @@
             </select>
         </form>
         <div id="campus_lecture" style="display: none;">
-            <table>
+
+            <div class="container" style="max-width: 50%">
+                <input type="text" class="form-control" id="campus_lecture_live_search" autocomplete="off"
+                    placeholder="search...">
+            </div>
+            <div id="search_campus_lecture_result"></div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $("#campus_lecture_live_search").keyup(function () {
+                        var input = $(this).val();
+                        //alert(input);
+
+                        if (input !== "") {
+                            $("#search_campus_lecture_result").css("display", "initial");
+                            $("#show_all_campus_lecture").css("display", "none");
+                            $.ajax({
+                                url: "search/search_campus_lecture.php",
+                                method: "POST",
+                                data: { input: input },
+
+                                success: function (data) {
+                                    $("#search_campus_lecture_result").html(data);
+                                }
+                            })
+                        } else {
+                            $("#search_campus_lecture_result").css("display", "none");
+                            $("#show_all_campus_lecture").css("display", "initial");
+                        }
+                    })
+                })
+            </script>
+
+            <table id="show_all_campus_lecture">
                 <?php
                 $link = mysqli_connect(
                     'localhost',
@@ -231,7 +263,39 @@
             </table>
         </div>
         <div id="textbooks_and_works" style="display: none;">
-            <table>
+
+            <div class="container" style="max-width: 50%">
+                <input type="text" class="form-control" id="textbooks_and_works_live_search" autocomplete="off"
+                    placeholder="search...">
+            </div>
+            <div id="search_textbooks_and_works_result"></div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $("#textbooks_and_works_live_search").keyup(function () {
+                        var input = $(this).val();
+                        //alert(input);
+
+                        if (input !== "") {
+                            $("#search_textbooks_and_works_result").css("display", "initial");
+                            $("#show_all_textbooks_and_works").css("display", "none");
+                            $.ajax({
+                                url: "search/search_textbooks_and_works.php",
+                                method: "POST",
+                                data: { input: input },
+
+                                success: function (data) {
+                                    $("#search_textbooks_and_works_result").html(data);
+                                }
+                            })
+                        } else {
+                            $("#search_textbooks_and_works_result").css("display", "none");
+                            $("#show_all_textbooks_and_works").css("display", "initial");
+                        }
+                    })
+                })
+            </script>
+
+            <table id="show_all_textbooks_and_works">
                 <?php
                 $link = mysqli_connect(
                     'localhost',
@@ -265,7 +329,39 @@
             </select>
         </form>
         <div id="campus_awards_and_student_guidance_awards" style="display: none;">
-            <table>
+
+            <div class="container" style="max-width: 50%">
+                <input type="text" class="form-control" id="campus_awards_and_student_guidance_awards_live_search"
+                    autocomplete="off" placeholder="search...">
+            </div>
+            <div id="search_campus_awards_and_student_guidance_awards_result"></div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $("#campus_awards_and_student_guidance_awards_live_search").keyup(function () {
+                        var input = $(this).val();
+                        //alert(input);
+
+                        if (input !== "") {
+                            $("#search_campus_awards_and_student_guidance_awards_result").css("display", "initial");
+                            $("#show_all_campus_awards_and_student_guidance_awards").css("display", "none");
+                            $.ajax({
+                                url: "search/search_campus_awards_and_student_guidance_awards.php",
+                                method: "POST",
+                                data: { input: input },
+
+                                success: function (data) {
+                                    $("#search_campus_awards_and_student_guidance_awards_result").html(data);
+                                }
+                            })
+                        } else {
+                            $("#search_campus_awards_and_student_guidance_awards_result").css("display", "none");
+                            $("#show_all_campus_awards_and_student_guidance_awards").css("display", "initial");
+                        }
+                    })
+                })
+            </script>
+
+            <table id="show_all_campus_awards_and_student_guidance_awards">
                 <?php
                 $link = mysqli_connect(
                     'localhost',
@@ -288,7 +384,39 @@
             </table>
         </div>
         <div id="out_campus_awards_and_student_guidance_awards" style="display: none;">
-            <table>
+
+            <div class="container" style="max-width: 50%">
+                <input type="text" class="form-control" id="out_campus_awards_and_student_guidance_awards_live_search"
+                    autocomplete="off" placeholder="search...">
+            </div>
+            <div id="search_out_campus_awards_and_student_guidance_awards_result"></div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $("#out_campus_awards_and_student_guidance_awards_live_search").keyup(function () {
+                        var input = $(this).val();
+                        //alert(input);
+
+                        if (input !== "") {
+                            $("#search_out_campus_awards_and_student_guidance_awards_result").css("display", "initial");
+                            $("#show_all_out_campus_awards_and_student_guidance_awards").css("display", "none");
+                            $.ajax({
+                                url: "search/search_out_campus_awards_and_student_guidance_awards.php",
+                                method: "POST",
+                                data: { input: input },
+
+                                success: function (data) {
+                                    $("#search_out_campus_awards_and_student_guidance_awards_result").html(data);
+                                }
+                            })
+                        } else {
+                            $("#search_out_campus_awards_and_student_guidance_awards_result").css("display", "none");
+                            $("#show_all_out_campus_awards_and_student_guidance_awards").css("display", "initial");
+                        }
+                    })
+                })
+            </script>
+
+            <table id="show_all_out_campus_awards_and_student_guidance_awards">
                 <?php
                 $link = mysqli_connect(
                     'localhost',
@@ -323,7 +451,39 @@
             </select>
         </form>
         <div id="Industry_University_Cooperation_Program" style="display: none;">
-            <table>
+
+            <div class="container" style="max-width: 50%">
+                <input type="text" class="form-control" id="Industry_University_Cooperation_Program_live_search"
+                    autocomplete="off" placeholder="search...">
+            </div>
+            <div id="search_Industry_University_Cooperation_Program_result"></div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $("#Industry_University_Cooperation_Program_live_search").keyup(function () {
+                        var input = $(this).val();
+                        //alert(input);
+
+                        if (input !== "") {
+                            $("#search_Industry_University_Cooperation_Program_result").css("display", "initial");
+                            $("#show_all_Industry_University_Cooperation_Program").css("display", "none");
+                            $.ajax({
+                                url: "search/search_Industry_University_Cooperation_Program.php",
+                                method: "POST",
+                                data: { input: input },
+
+                                success: function (data) {
+                                    $("#search_Industry_University_Cooperation_Program_result").html(data);
+                                }
+                            })
+                        } else {
+                            $("#search_Industry_University_Cooperation_Program_result").css("display", "none");
+                            $("#show_all_Industry_University_Cooperation_Program").css("display", "initial");
+                        }
+                    })
+                })
+            </script>
+
+            <table id="show_all_Industry_University_Cooperation_Program">
                 <?php
                 $link = mysqli_connect(
                     'localhost',
@@ -345,7 +505,39 @@
             </table>
         </div>
         <div id="ministry_of_science_and_technology_program" style="display: none;">
-            <table>
+
+            <div class="container" style="max-width: 50%">
+                <input type="text" class="form-control" id="ministry_of_science_and_technology_program_live_search"
+                    autocomplete="off" placeholder="search...">
+            </div>
+            <div id="search_ministry_of_science_and_technology_program_result"></div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $("#ministry_of_science_and_technology_program_live_search").keyup(function () {
+                        var input = $(this).val();
+                        //alert(input);
+
+                        if (input !== "") {
+                            $("#search_ministry_of_science_and_technology_program_result").css("display", "initial");
+                            $("#show_all_ministry_of_science_and_technology_program").css("display", "none");
+                            $.ajax({
+                                url: "search/search_ministry_of_science_and_technology_program.php",
+                                method: "POST",
+                                data: { input: input },
+
+                                success: function (data) {
+                                    $("#search_ministry_of_science_and_technology_program_result").html(data);
+                                }
+                            })
+                        } else {
+                            $("#search_ministry_of_science_and_technology_program_result").css("display", "none");
+                            $("#show_all_ministry_of_science_and_technology_program").css("display", "initial");
+                        }
+                    })
+                })
+            </script>
+
+            <table id="show_all_ministry_of_science_and_technology_program">
                 <?php
                 $link = mysqli_connect(
                     'localhost',
@@ -379,7 +571,40 @@
             </select>
         </form>
         <div id="campus_experience" style="display: none;">
-            <table>
+
+            <div class="container" style="max-width: 50%">
+                <input type="text" class="form-control" id="campus_experience_live_search" autocomplete="off"
+                    placeholder="search...">
+            </div>
+            <div id="search_campus_experience_result"></div>
+
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $("#campus_experience_live_search").keyup(function () {
+                        var input = $(this).val();
+                        //alert(input);
+
+                        if (input !== "") {
+                            $("#search_campus_experience_result").css("display", "initial");
+                            $("#show_all_campus_experience").css("display", "none");
+                            $.ajax({
+                                url: "search/search_campus_experience.php",
+                                method: "POST",
+                                data: { input: input },
+
+                                success: function (data) {
+                                    $("#search_campus_experience_result").html(data);
+                                }
+                            })
+                        } else {
+                            $("#search_campus_experience_result").css("display", "none");
+                            $("#show_all_campus_experience").css("display", "initial");
+                        }
+                    })
+                })
+            </script>
+
+            <table id="show_all_campus_experience">
                 <?php
                 $link = mysqli_connect(
                     'localhost',
@@ -400,7 +625,40 @@
             </table>
         </div>
         <div id="out_campus_experience" style="display: none;">
-            <table>
+
+            <div class="container" style="max-width: 50%">
+                <input type="text" class="form-control" id="out_campus_experience_live_search" autocomplete="off"
+                    placeholder="search...">
+            </div>
+            <div id="search_out_campus_experience_result"></div>
+
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $("#out_campus_experience_live_search").keyup(function () {
+                        var input = $(this).val();
+                        //alert(input);
+
+                        if (input !== "") {
+                            $("#search_out_campus_experience_result").css("display", "initial");
+                            $("#show_all_out_campus_experience").css("display", "none");
+                            $.ajax({
+                                url: "search/search_out_campus_experience.php",
+                                method: "POST",
+                                data: { input: input },
+
+                                success: function (data) {
+                                    $("#search_out_campus_experience_result").html(data);
+                                }
+                            })
+                        } else {
+                            $("#search_out_campus_experience_result").css("display", "none");
+                            $("#show_all_out_campus_experience").css("display", "initial");
+                        }
+                    })
+                })
+            </script>
+
+            <table id="show_all_out_campus_experience">
                 <?php
                 $link = mysqli_connect(
                     'localhost',

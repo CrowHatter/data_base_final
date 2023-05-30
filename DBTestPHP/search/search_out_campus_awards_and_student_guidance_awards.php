@@ -12,8 +12,8 @@ if (isset($_POST['input'])) {
     echo "<table>";
     while ($row = mysqli_fetch_array($result)) {
         echo "<tr>";
-        echo "<td>" . $row["award_name"] . "</td>";
         echo "<td>" . $row["launch_year"] . "</td>";
+        echo "<td>" . $row["award_name"] . "</td>";
         echo "<td>" . $row["awarding_unit"] . "</td>";
         echo "<td>" . $row["awarding_date"] . "</td>";
         echo "<td>" . $row["content"] . "</td>";

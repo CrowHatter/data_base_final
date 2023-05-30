@@ -20,5 +20,4 @@ if (isset($_POST['input'])) {
     echo "</table>";
     mysqli_close($link);
 }
-
 ?>
